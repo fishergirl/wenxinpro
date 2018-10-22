@@ -1,0 +1,133 @@
+.header{
+  margin-bottom: 22px;
+}
+.wrapper{
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+.keyword_box{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 20px;
+  &:hover{
+    border: 1px solid #000;
+  }
+  &:after{
+    content: ' ';
+    position: absolute;
+    height: 92%;
+    border-left: 1px solid #ccc;
+    top: 4%;
+    left: 50%;
+  }
+  .sub_box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    .title,.article,.addmore{
+      padding: 0 10px;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ccc;
+    }
+    .article{
+      border-bottom: 1px dashed #ccc;
+      padding-left: 10px;
+    }
+    .addmore{
+      border: none;
+      cursor: pointer;
+      color: #07d;
+    }
+    .article .reply_type{
+      display: inline-block;
+      border-radius: 3px;
+      font-size: 12px;
+      height: 18px;
+      line-height: 14px;
+      padding: 2px 4px;
+      color: #fff;
+      background-color: #468847;
+    }
+    .article.reply_box{
+      height: auto !important;
+      .reply_item_box>span{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .reply_max{
+        display: inline-block;
+        max-width: 90%;
+        height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .hover{
+      cursor: pointer;
+    }
+    .hover:hover{
+      color: #07d;
+    }
+  }
+}
+.keyword_box.reply{
+  margin-top: 30px;
+  &:after{
+    content: none;
+  }
+}
+.keyword_ctn{
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  margin-right: 18px;
+  margin-top: 15px;
+  .close_dialog{
+    position: absolute;
+    display: none;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 14px;
+    right: -10px;
+    top: -10px;
+  }
+
+  &:hover .close_dialog{
+    display: block;
+  }
+  .keyword{
+    font-size: 12px;
+    background-color: #fff;
+    padding: 0 8px;
+    border-right: 1px solid #CCC;
+    border-radius: 4px 0 0 4px;
+    height: 28px;
+  }
+  .rule{
+    font-size: 12px;
+    background-color: #EEE;
+    padding: 0 5px;
+    border-radius: 0 4px 4px 0;
+  }
+  span{
+    display: block;
+    float: left;
+    cursor: pointer;
+  }
+}
+
+
